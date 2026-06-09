@@ -1,0 +1,390 @@
+{
+  "meta": {
+    "title": "Wärmepumpen-Prüftechnik – Fachvokabular",
+    "version": 1,
+    "description": "Fachbegriffe rund um die Prüfung von Wärmepumpengeräten nach EN 14511 und EN 14825.",
+    "languages": ["en", "de", "fa"]
+  },
+  "cards": [
+    {
+      "id": "cop",
+      "term": "Coefficient of Performance (COP)",
+      "de": "Leistungszahl (COP)",
+      "fa": "ضریب عملکرد",
+      "exampleEn": "The COP is the ratio of the heating capacity to the power input.",
+      "exampleDe": "Die Leistungszahl ist das Verhältnis von Heizleistung zur Leistungsaufnahme.",
+      "exampleFa": "ضریب عملکرد، نسبت ظرفیت گرمایش به توان مصرفی است.",
+      "category": "EN 14511"
+    },
+    {
+      "id": "eer",
+      "term": "Energy Efficiency Ratio (EER)",
+      "de": "Energieeffizienzverhältnis (EER)",
+      "fa": "نسبت بازده انرژی",
+      "exampleEn": "In cooling mode we report the EER instead of the COP.",
+      "exampleDe": "Im Kühlbetrieb geben wir das EER statt der Leistungszahl an.",
+      "exampleFa": "در حالت سرمایش، به جای COP مقدار EER را گزارش می‌کنیم.",
+      "category": "EN 14511"
+    },
+    {
+      "id": "scop",
+      "term": "Seasonal Coefficient of Performance (SCOP)",
+      "de": "jahreszeitbedingte Leistungszahl (SCOP)",
+      "fa": "ضریب عملکرد فصلی",
+      "exampleEn": "The SCOP reflects the efficiency over the whole heating season.",
+      "exampleDe": "Der SCOP bildet die Effizienz über die gesamte Heizperiode ab.",
+      "exampleFa": "SCOP بازده دستگاه را در کل فصل گرمایش نشان می‌دهد.",
+      "category": "EN 14825"
+    },
+    {
+      "id": "seer",
+      "term": "Seasonal Energy Efficiency Ratio (SEER)",
+      "de": "jahreszeitbedingte Energieeffizienz im Kühlbetrieb (SEER)",
+      "fa": "نسبت بازده انرژی فصلی",
+      "exampleEn": "The SEER is calculated from several part-load test points.",
+      "exampleDe": "Der SEER wird aus mehreren Teillast-Prüfpunkten berechnet.",
+      "exampleFa": "SEER از چند نقطه آزمون در بار جزئی محاسبه می‌شود.",
+      "category": "EN 14825"
+    },
+    {
+      "id": "heating-capacity",
+      "term": "heating capacity",
+      "de": "Heizleistung",
+      "fa": "ظرفیت گرمایش",
+      "exampleEn": "The declared heating capacity must be confirmed by the test.",
+      "exampleDe": "Die angegebene Heizleistung muss durch die Prüfung bestätigt werden.",
+      "exampleFa": "ظرفیت گرمایش اعلام‌شده باید با آزمون تأیید شود.",
+      "category": "EN 14511"
+    },
+    {
+      "id": "cooling-capacity",
+      "term": "cooling capacity",
+      "de": "Kühlleistung",
+      "fa": "ظرفیت سرمایش",
+      "exampleEn": "We measured the cooling capacity at the standard rating conditions.",
+      "exampleDe": "Wir haben die Kühlleistung bei den Standard-Nennbedingungen gemessen.",
+      "exampleFa": "ظرفیت سرمایش را در شرایط نامی استاندارد اندازه‌گیری کردیم.",
+      "category": "EN 14511"
+    },
+    {
+      "id": "power-input",
+      "term": "power input",
+      "de": "Leistungsaufnahme",
+      "fa": "توان مصرفی",
+      "exampleEn": "The electrical power input includes the compressor and the fans.",
+      "exampleDe": "Die elektrische Leistungsaufnahme umfasst den Verdichter und die Ventilatoren.",
+      "exampleFa": "توان مصرفی الکتریکی شامل کمپرسور و فن‌ها است.",
+      "category": "EN 14511"
+    },
+    {
+      "id": "refrigerant",
+      "term": "refrigerant",
+      "de": "Kältemittel",
+      "fa": "مبرّد",
+      "exampleEn": "The refrigerant absorbs heat as it evaporates in the evaporator.",
+      "exampleDe": "Das Kältemittel nimmt Wärme auf, während es im Verdampfer verdampft.",
+      "exampleFa": "مبرّد هنگام تبخیر در اواپراتور گرما جذب می‌کند.",
+      "category": "Komponenten"
+    },
+    {
+      "id": "compressor",
+      "term": "compressor",
+      "de": "Verdichter",
+      "fa": "کمپرسور",
+      "exampleEn": "The compressor raises the pressure and temperature of the refrigerant.",
+      "exampleDe": "Der Verdichter erhöht den Druck und die Temperatur des Kältemittels.",
+      "exampleFa": "کمپرسور فشار و دمای مبرّد را افزایش می‌دهد.",
+      "category": "Komponenten"
+    },
+    {
+      "id": "evaporator",
+      "term": "evaporator",
+      "de": "Verdampfer",
+      "fa": "اواپراتور (تبخیرکننده)",
+      "exampleEn": "On the cold side the refrigerant boils inside the evaporator.",
+      "exampleDe": "Auf der kalten Seite verdampft das Kältemittel im Verdampfer.",
+      "exampleFa": "در سمت سرد، مبرّد داخل اواپراتور می‌جوشد.",
+      "category": "Komponenten"
+    },
+    {
+      "id": "condenser",
+      "term": "condenser",
+      "de": "Verflüssiger",
+      "fa": "کندانسور (چگالنده)",
+      "exampleEn": "Heat is released to the water in the condenser.",
+      "exampleDe": "Im Verflüssiger wird Wärme an das Wasser abgegeben.",
+      "exampleFa": "در کندانسور گرما به آب منتقل می‌شود.",
+      "category": "Komponenten"
+    },
+    {
+      "id": "expansion-valve",
+      "term": "expansion valve",
+      "de": "Expansionsventil",
+      "fa": "شیر انبساط",
+      "exampleEn": "The expansion valve lowers the pressure before the evaporator.",
+      "exampleDe": "Das Expansionsventil senkt den Druck vor dem Verdampfer.",
+      "exampleFa": "شیر انبساط فشار را پیش از اواپراتور کاهش می‌دهد.",
+      "category": "Komponenten"
+    },
+    {
+      "id": "heat-exchanger",
+      "term": "heat exchanger",
+      "de": "Wärmeübertrager (Wärmetauscher)",
+      "fa": "مبدل حرارتی",
+      "exampleEn": "Both the evaporator and the condenser are heat exchangers.",
+      "exampleDe": "Sowohl der Verdampfer als auch der Verflüssiger sind Wärmeübertrager.",
+      "exampleFa": "هم اواپراتور و هم کندانسور مبدل حرارتی هستند.",
+      "category": "Komponenten"
+    },
+    {
+      "id": "part-load",
+      "term": "part load",
+      "de": "Teillast",
+      "fa": "بار جزئی",
+      "exampleEn": "EN 14825 rates the unit at several part-load conditions.",
+      "exampleDe": "EN 14825 bewertet das Gerät bei mehreren Teillastbedingungen.",
+      "exampleFa": "استاندارد EN 14825 دستگاه را در چند شرایط بار جزئی ارزیابی می‌کند.",
+      "category": "EN 14825"
+    },
+    {
+      "id": "full-load",
+      "term": "full load",
+      "de": "Volllast",
+      "fa": "بار کامل",
+      "exampleEn": "At full load the compressor runs at its maximum speed.",
+      "exampleDe": "Bei Volllast läuft der Verdichter mit maximaler Drehzahl.",
+      "exampleFa": "در بار کامل، کمپرسور با حداکثر سرعت کار می‌کند.",
+      "category": "EN 14825"
+    },
+    {
+      "id": "rated-conditions",
+      "term": "rated conditions",
+      "de": "Nennbedingungen",
+      "fa": "شرایط نامی",
+      "exampleEn": "The performance is declared at the rated conditions.",
+      "exampleDe": "Die Leistung wird bei den Nennbedingungen angegeben.",
+      "exampleFa": "عملکرد در شرایط نامی اعلام می‌شود.",
+      "category": "EN 14511"
+    },
+    {
+      "id": "standard-rating-conditions",
+      "term": "standard rating conditions",
+      "de": "Standard-Nennbedingungen",
+      "fa": "شرایط نامی استاندارد",
+      "exampleEn": "The standard rating conditions fix the inlet and outlet temperatures.",
+      "exampleDe": "Die Standard-Nennbedingungen legen die Eintritts- und Austrittstemperaturen fest.",
+      "exampleFa": "شرایط نامی استاندارد، دماهای ورودی و خروجی را تعیین می‌کند.",
+      "category": "EN 14511"
+    },
+    {
+      "id": "bivalent-temperature",
+      "term": "bivalent temperature",
+      "de": "Bivalenztemperatur",
+      "fa": "دمای دوگانه (بای‌والان)",
+      "exampleEn": "Below the bivalent temperature the backup heater switches on.",
+      "exampleDe": "Unterhalb der Bivalenztemperatur schaltet die Zusatzheizung ein.",
+      "exampleFa": "زیر دمای دوگانه، گرمکن پشتیبان روشن می‌شود.",
+      "category": "EN 14825"
+    },
+    {
+      "id": "reference-design-conditions",
+      "term": "reference design conditions",
+      "de": "Referenzauslegungsbedingungen",
+      "fa": "شرایط طراحی مرجع",
+      "exampleEn": "The reference design conditions depend on the climate zone.",
+      "exampleDe": "Die Referenzauslegungsbedingungen hängen von der Klimazone ab.",
+      "exampleFa": "شرایط طراحی مرجع به منطقه اقلیمی بستگی دارد.",
+      "category": "EN 14825"
+    },
+    {
+      "id": "temperature-bin",
+      "term": "temperature bin",
+      "de": "Temperaturklasse (Bin)",
+      "fa": "بازه دمایی (بین)",
+      "exampleEn": "Each temperature bin has a number of hours assigned to it.",
+      "exampleDe": "Jeder Temperaturklasse ist eine Stundenzahl zugeordnet.",
+      "exampleFa": "به هر بازه دمایی، تعداد ساعتی اختصاص داده شده است.",
+      "category": "EN 14825"
+    },
+    {
+      "id": "heating-season",
+      "term": "heating season",
+      "de": "Heizperiode (Heizsaison)",
+      "fa": "فصل گرمایش",
+      "exampleEn": "The average heating season is defined for three climate zones.",
+      "exampleDe": "Die durchschnittliche Heizperiode ist für drei Klimazonen definiert.",
+      "exampleFa": "فصل گرمایش متوسط برای سه منطقه اقلیمی تعریف شده است.",
+      "category": "EN 14825"
+    },
+    {
+      "id": "degradation-coefficient",
+      "term": "degradation coefficient (Cd)",
+      "de": "Minderungskoeffizient (Cd)",
+      "fa": "ضریب افت کارایی",
+      "exampleEn": "The degradation coefficient accounts for losses from cycling.",
+      "exampleDe": "Der Minderungskoeffizient berücksichtigt Verluste durch das Takten.",
+      "exampleFa": "ضریب افت کارایی، تلفات ناشی از خاموش‌وروشن‌شدن را در نظر می‌گیرد.",
+      "category": "EN 14825"
+    },
+    {
+      "id": "capacity-ratio",
+      "term": "capacity ratio",
+      "de": "Leistungsverhältnis",
+      "fa": "نسبت ظرفیت",
+      "exampleEn": "The capacity ratio compares the part-load to the full-load capacity.",
+      "exampleDe": "Das Leistungsverhältnis vergleicht die Teillast- mit der Volllastleistung.",
+      "exampleFa": "نسبت ظرفیت، ظرفیت بار جزئی را با بار کامل مقایسه می‌کند.",
+      "category": "EN 14825"
+    },
+    {
+      "id": "backup-heater",
+      "term": "backup heater",
+      "de": "Zusatzheizung (Nachheizung)",
+      "fa": "گرمکن پشتیبان",
+      "exampleEn": "The backup heater covers the demand at very low temperatures.",
+      "exampleDe": "Die Zusatzheizung deckt den Bedarf bei sehr niedrigen Temperaturen.",
+      "exampleFa": "گرمکن پشتیبان، نیاز گرمایی را در دماهای بسیار پایین تأمین می‌کند.",
+      "category": "EN 14825"
+    },
+    {
+      "id": "defrost",
+      "term": "defrost",
+      "de": "Abtauung",
+      "fa": "یخ‌زدایی (دیفراست)",
+      "exampleEn": "During defrost the cycle is briefly reversed to melt the ice.",
+      "exampleDe": "Während der Abtauung wird der Kreislauf kurz umgekehrt, um das Eis zu schmelzen.",
+      "exampleFa": "هنگام یخ‌زدایی، سیکل به‌طور کوتاه معکوس می‌شود تا یخ آب شود.",
+      "category": "Betrieb"
+    },
+    {
+      "id": "crankcase-heater",
+      "term": "crankcase heater",
+      "de": "Kurbelwannenheizung",
+      "fa": "گرمکن کارتر",
+      "exampleEn": "The crankcase heater prevents refrigerant from condensing in the compressor.",
+      "exampleDe": "Die Kurbelwannenheizung verhindert, dass Kältemittel im Verdichter kondensiert.",
+      "exampleFa": "گرمکن کارتر مانع از میعان مبرّد در کمپرسور می‌شود.",
+      "category": "Komponenten"
+    },
+    {
+      "id": "standby-mode",
+      "term": "standby mode",
+      "de": "Bereitschaftszustand",
+      "fa": "حالت آماده‌به‌کار",
+      "exampleEn": "We also measure the power consumed in standby mode.",
+      "exampleDe": "Wir messen auch die Leistungsaufnahme im Bereitschaftszustand.",
+      "exampleFa": "توان مصرفی در حالت آماده‌به‌کار را نیز اندازه‌گیری می‌کنیم.",
+      "category": "EN 14825"
+    },
+    {
+      "id": "thermostat-off-mode",
+      "term": "thermostat-off mode",
+      "de": "Zustand mit ausgeschaltetem Thermostat",
+      "fa": "حالت خاموش‌بودن ترموستات",
+      "exampleEn": "In thermostat-off mode the unit is ready but not heating.",
+      "exampleDe": "Im Zustand mit ausgeschaltetem Thermostat ist das Gerät bereit, heizt aber nicht.",
+      "exampleFa": "در حالت خاموش‌بودن ترموستات، دستگاه آماده است اما گرمایش نمی‌دهد.",
+      "category": "EN 14825"
+    },
+    {
+      "id": "superheat",
+      "term": "superheat",
+      "de": "Überhitzung",
+      "fa": "مافوق گرمایش (سوپرهیت)",
+      "exampleEn": "Enough superheat ensures that only vapour enters the compressor.",
+      "exampleDe": "Ausreichende Überhitzung stellt sicher, dass nur Dampf in den Verdichter gelangt.",
+      "exampleFa": "مافوق گرمایش کافی تضمین می‌کند که فقط بخار وارد کمپرسور شود.",
+      "category": "Kältekreis"
+    },
+    {
+      "id": "subcooling",
+      "term": "subcooling",
+      "de": "Unterkühlung",
+      "fa": "مادون سرمایش (ساب‌کولینگ)",
+      "exampleEn": "Subcooling improves the efficiency at the condenser outlet.",
+      "exampleDe": "Unterkühlung verbessert die Effizienz am Austritt des Verflüssigers.",
+      "exampleFa": "مادون سرمایش، بازده را در خروجی کندانسور بهبود می‌دهد.",
+      "category": "Kältekreis"
+    },
+    {
+      "id": "flow-rate",
+      "term": "flow rate",
+      "de": "Durchflussrate (Volumenstrom)",
+      "fa": "دبی جریان",
+      "exampleEn": "The water flow rate must stay constant during the test.",
+      "exampleDe": "Der Wasserdurchfluss muss während der Prüfung konstant bleiben.",
+      "exampleFa": "دبی جریان آب باید در طول آزمون ثابت بماند.",
+      "category": "Messung"
+    },
+    {
+      "id": "inlet-temperature",
+      "term": "inlet temperature",
+      "de": "Eintrittstemperatur",
+      "fa": "دمای ورودی",
+      "exampleEn": "The water inlet temperature is set to 30 degrees Celsius.",
+      "exampleDe": "Die Wassereintrittstemperatur wird auf 30 Grad Celsius eingestellt.",
+      "exampleFa": "دمای ورودی آب روی ۳۰ درجه سلسیوس تنظیم می‌شود.",
+      "category": "Messung"
+    },
+    {
+      "id": "outlet-temperature",
+      "term": "outlet temperature",
+      "de": "Austrittstemperatur",
+      "fa": "دمای خروجی",
+      "exampleEn": "We record the outlet temperature once the system is stable.",
+      "exampleDe": "Wir erfassen die Austrittstemperatur, sobald das System stabil ist.",
+      "exampleFa": "دمای خروجی را پس از پایدارشدن سیستم ثبت می‌کنیم.",
+      "category": "Messung"
+    },
+    {
+      "id": "test-rig",
+      "term": "test rig (test bench)",
+      "de": "Prüfstand",
+      "fa": "نیمکت آزمون (دستگاه آزمون)",
+      "exampleEn": "The unit was mounted on the test rig in the calorimeter room.",
+      "exampleDe": "Das Gerät wurde auf dem Prüfstand im Kalorimeterraum aufgebaut.",
+      "exampleFa": "دستگاه روی نیمکت آزمون در اتاق کالریمتر نصب شد.",
+      "category": "Messung"
+    },
+    {
+      "id": "measurement-uncertainty",
+      "term": "measurement uncertainty",
+      "de": "Messunsicherheit",
+      "fa": "عدم قطعیت اندازه‌گیری",
+      "exampleEn": "Every reported value comes with a measurement uncertainty.",
+      "exampleDe": "Zu jedem angegebenen Wert gehört eine Messunsicherheit.",
+      "exampleFa": "هر مقدار گزارش‌شده با یک عدم قطعیت اندازه‌گیری همراه است.",
+      "category": "Messung"
+    },
+    {
+      "id": "steady-state",
+      "term": "steady-state condition",
+      "de": "stationärer Zustand (Beharrungszustand)",
+      "fa": "شرایط حالت پایا",
+      "exampleEn": "Data is only valid once a steady-state condition is reached.",
+      "exampleDe": "Die Daten sind erst gültig, wenn ein stationärer Zustand erreicht ist.",
+      "exampleFa": "داده‌ها تنها پس از رسیدن به حالت پایا معتبر هستند.",
+      "category": "Messung"
+    },
+    {
+      "id": "brine",
+      "term": "brine",
+      "de": "Sole",
+      "fa": "محلول نمکی (برین)",
+      "exampleEn": "In a ground-source unit the brine carries heat from the ground.",
+      "exampleDe": "Bei einer Sole-Wärmepumpe transportiert die Sole Wärme aus dem Erdreich.",
+      "exampleFa": "در پمپ حرارتی زمین‌گرمایی، محلول نمکی گرما را از زمین منتقل می‌کند.",
+      "category": "Komponenten"
+    },
+    {
+      "id": "low-temperature-application",
+      "term": "low-temperature application",
+      "de": "Niedertemperaturanwendung",
+      "fa": "کاربرد دمای پایین",
+      "exampleEn": "Underfloor heating is a typical low-temperature application.",
+      "exampleDe": "Eine Fußbodenheizung ist eine typische Niedertemperaturanwendung.",
+      "exampleFa": "گرمایش از کف، یک کاربرد دمای پایین معمول است.",
+      "category": "Anwendung"
+    }
+  ]
+}

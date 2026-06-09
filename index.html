@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wärmepumpen-Vokabeltrainer</title>
+  <meta name="description" content="Fachvokabular für die Wärmepumpen-Prüftechnik (EN 14511, EN 14825) – Englisch, Deutsch, Persisch." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Vazirmatn:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand__mark" aria-hidden="true"></span>
+      <div class="brand__text">
+        <span class="brand__name">Heat&nbsp;Pump Lexikon</span>
+        <span class="brand__sub">EN&nbsp;14511 · EN&nbsp;14825</span>
+      </div>
+    </div>
+
+    <nav class="nav" aria-label="Hauptnavigation">
+      <button class="nav__btn is-active" data-view="dashboard" type="button">Übersicht</button>
+      <button class="nav__btn" data-view="study" type="button">Lernen</button>
+      <button class="nav__btn" data-view="manage" type="button">Hinzufügen</button>
+    </nav>
+
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Hell-/Dunkelmodus umschalten">
+      <span class="theme-toggle__icon" aria-hidden="true"></span>
+    </button>
+  </header>
+
+  <main id="main" class="main">
+
+    <!-- ÜBERSICHT -->
+    <section class="view view--dashboard is-active" data-view="dashboard" aria-label="Übersicht">
+      <div class="dash-head">
+        <p class="eyebrow">Lernstand</p>
+        <h1 class="dash-title">Heute bereit zum Wiederholen</h1>
+      </div>
+
+      <div class="stats" id="stats"><!-- via JS --></div>
+
+      <button class="cta" id="startStudy" type="button">
+        <span class="cta__label">Lernsitzung starten</span>
+        <span class="cta__meta" id="ctaMeta"></span>
+      </button>
+
+      <div class="breakdown">
+        <h2 class="section-title">Themengebiete</h2>
+        <div class="cat-list" id="catList"><!-- via JS --></div>
+      </div>
+    </section>
+
+    <!-- LERNEN -->
+    <section class="view view--study" data-view="study" aria-label="Lernkarte">
+      <div class="study-empty" id="studyEmpty" hidden>
+        <p class="study-empty__icon" aria-hidden="true">✓</p>
+        <h2>Alles wiederholt</h2>
+        <p class="muted">Für heute sind keine Karten mehr fällig. Schau später wieder vorbei oder füge neue Begriffe hinzu.</p>
+        <button class="ghost-btn" data-view="manage" type="button">Begriffe hinzufügen</button>
+      </div>
+
+      <div class="study-stage" id="studyStage">
+        <div class="study-progress">
+          <span id="studyCount" class="study-progress__count"></span>
+          <div class="study-progress__bar"><span id="studyBar"></span></div>
+        </div>
+
+        <article class="card" id="card">
+          <div class="card__edge" aria-hidden="true"></div>
+
+          <div class="card__face card__face--front">
+            <p class="card__tag" id="cardCategory"></p>
+            <p class="card__lang-label">English</p>
+            <h2 class="card__term" id="frontTerm"></h2>
+            <div class="card__audio">
+              <button class="audio-btn" id="frontAudioEn" type="button">
+                <span class="audio-btn__ico" aria-hidden="true">🔊</span> EN
+              </button>
+            </div>
+            <p class="card__hint">Begriff erinnern – dann Antwort aufdecken.</p>
+          </div>
+
+          <div class="card__face card__face--back" id="cardBack" hidden>
+            <div class="meaning">
+              <div class="meaning__row">
+                <span class="meaning__lbl">Deutsch</span>
+                <span class="meaning__val" id="backDe"></span>
+                <button class="audio-btn audio-btn--mini" id="backAudioDe" type="button" aria-label="Deutsch anhören">🔊</button>
+              </div>
+              <div class="meaning__row">
+                <span class="meaning__lbl">فارسی</span>
+                <span class="meaning__val rtl" id="backFa"></span>
+              </div>
+            </div>
+
+            <div class="examples">
+              <div class="example">
+                <div class="example__line">
+                  <p class="example__text" id="exEn"></p>
+                  <button class="audio-btn audio-btn--mini" id="exAudioEn" type="button" aria-label="Englischen Beispielsatz anhören">🔊</button>
+                </div>
+                <span class="example__lang">EN</span>
+              </div>
+              <div class="example">
+                <div class="example__line">
+                  <p class="example__text" id="exDe"></p>
+                  <button class="audio-btn audio-btn--mini" id="exAudioDe" type="button" aria-label="Deutschen Beispielsatz anhören">🔊</button>
+                </div>
+                <span class="example__lang">DE</span>
+              </div>
+              <div class="example">
+                <div class="example__line">
+                  <p class="example__text rtl" id="exFa"></p>
+                </div>
+                <span class="example__lang">FA</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="study-actions">
+          <button class="reveal-btn" id="revealBtn" type="button">Antwort zeigen</button>
+
+          <div class="grade" id="gradeRow" hidden>
+            <button class="grade__btn grade__btn--again" data-grade="again" type="button">
+              Kenne ich nicht <span class="grade__hint" id="hintAgain"></span>
+            </button>
+            <button class="grade__btn grade__btn--good" data-grade="good" type="button">
+              Kenne ich <span class="grade__hint" id="hintGood"></span>
+            </button>
+            <button class="grade__btn grade__btn--easy" data-grade="easy" type="button">
+              Sehr sicher <span class="grade__hint" id="hintEasy"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HINZUFÜGEN / VERWALTEN -->
+    <section class="view view--manage" data-view="manage" aria-label="Begriffe verwalten">
+      <div class="dash-head">
+        <p class="eyebrow">Erweitern</p>
+        <h1 class="dash-title">Neue Begriffe hinzufügen</h1>
+        <p class="muted">Füge Karten als JSON ein. Dein bisheriger Fortschritt bleibt erhalten – bestehende Begriffe (gleiche <code>id</code>) werden nur aktualisiert.</p>
+      </div>
+
+      <div class="manage-grid">
+        <div class="panel">
+          <h2 class="section-title">Karten als JSON einfügen</h2>
+          <p class="muted small">Erlaubt ist ein einzelnes Objekt, ein Array von Karten oder die komplette <code>vocabulary.json</code>.</p>
+          <textarea id="importText" class="json-input" spellcheck="false" placeholder='[
+  {
+    "id": "mein-begriff",
+    "term": "fan",
+    "de": "Ventilator",
+    "fa": "فن",
+    "exampleEn": "The fan moves air across the heat exchanger.",
+    "exampleDe": "Der Ventilator bewegt Luft über den Wärmeübertrager.",
+    "exampleFa": "فن، هوا را روی مبدل حرارتی جابه‌جا می‌کند.",
+    "category": "Komponenten"
+  }
+]'></textarea>
+          <div class="panel__actions">
+            <button class="ghost-btn ghost-btn--primary" id="importBtn" type="button">Hinzufügen</button>
+            <span class="hint-text" id="importMsg" role="status"></span>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h2 class="section-title">Datenstand &amp; Sicherung</h2>
+          <div class="panel__row">
+            <div>
+              <p class="panel__row-title">Begriffe aus vocabulary.json neu laden</p>
+              <p class="muted small">Lädt die Datei vom Server und ergänzt fehlende Begriffe.</p>
+            </div>
+            <button class="ghost-btn" id="reloadBtn" type="button">Neu laden</button>
+          </div>
+          <div class="panel__row">
+            <div>
+              <p class="panel__row-title">Lernfortschritt sichern</p>
+              <p class="muted small">Lädt deinen Fortschritt als JSON-Datei herunter.</p>
+            </div>
+            <button class="ghost-btn" id="exportBtn" type="button">Exportieren</button>
+          </div>
+          <div class="panel__row">
+            <div>
+              <p class="panel__row-title">Sicherung einspielen</p>
+              <p class="muted small">Stellt einen früheren Fortschritt wieder her.</p>
+            </div>
+            <label class="ghost-btn" for="restoreFile">Importieren
+              <input type="file" id="restoreFile" accept="application/json" hidden />
+            </label>
+          </div>
+          <div class="panel__row panel__row--danger">
+            <div>
+              <p class="panel__row-title">Fortschritt zurücksetzen</p>
+              <p class="muted small">Löscht alle Lernverläufe. Begriffe bleiben erhalten.</p>
+            </div>
+            <button class="ghost-btn ghost-btn--danger" id="resetBtn" type="button">Zurücksetzen</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
