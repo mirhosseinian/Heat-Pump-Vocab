@@ -1,8 +1,9 @@
 {
   "meta": {
     "title": "Wärmepumpen-Prüftechnik – Fachvokabular",
-    "version": 1,
-    "description": "Fachbegriffe rund um die Prüfung von Wärmepumpengeräten nach EN 14511 und EN 14825.",
+    "version": 2,
+    "updated": "2026-06-09",
+    "description": "Fachbegriffe rund um die Prüfung von Wärmepumpengeräten nach EN 14511, EN 14825 und der Ökodesign-Verordnung (EU) 2016/2281.",
     "languages": ["en", "de", "fa"]
   },
   "cards": [
@@ -385,6 +386,316 @@
       "exampleDe": "Eine Fußbodenheizung ist eine typische Niedertemperaturanwendung.",
       "exampleFa": "گرمایش از کف، یک کاربرد دمای پایین معمول است.",
       "category": "Anwendung"
+    },
+    {
+      "id": "ecodesign-requirements",
+      "term": "ecodesign requirements",
+      "de": "Ökodesign-Anforderungen",
+      "fa": "الزامات اکودیزاین (طراحی زیست‌محیطی)",
+      "exampleEn": "The regulation sets ecodesign requirements for air heating and cooling products.",
+      "exampleDe": "Die Verordnung legt Ökodesign-Anforderungen für Luftheizungs- und Kühlprodukte fest.",
+      "exampleFa": "این آیین‌نامه الزامات اکودیزاین را برای محصولات گرمایش و سرمایش هوا تعیین می‌کند.",
+      "category": "EU 2016/2281"
+    },
+    {
+      "id": "air-heating-product",
+      "term": "air heating product",
+      "de": "Luftheizungsprodukt",
+      "fa": "محصول گرمایش هوا",
+      "exampleEn": "An air heating product supplies heated air to an air-based heating system.",
+      "exampleDe": "Ein Luftheizungsprodukt liefert erwärmte Luft an ein luftbasiertes Heizsystem.",
+      "exampleFa": "یک محصول گرمایش هوا، هوای گرم‌شده را به سیستم گرمایش هوایی می‌رساند.",
+      "category": "EU 2016/2281"
+    },
+    {
+      "id": "cooling-product",
+      "term": "cooling product",
+      "de": "Kühlprodukt",
+      "fa": "محصول سرمایش",
+      "exampleEn": "A cooling product provides chilled air or water to a cooling system.",
+      "exampleDe": "Ein Kühlprodukt stellt einem Kühlsystem gekühlte Luft oder gekühltes Wasser bereit.",
+      "exampleFa": "یک محصول سرمایش، هوا یا آب سرد را به سیستم سرمایش می‌رساند.",
+      "category": "EU 2016/2281"
+    },
+    {
+      "id": "high-temperature-process-chiller",
+      "term": "high temperature process chiller",
+      "de": "Hochtemperatur-Prozesskühler",
+      "fa": "چیلر فرایندی دمابالا",
+      "exampleEn": "A high temperature process chiller cools a liquid to a 7 °C outlet temperature.",
+      "exampleDe": "Ein Hochtemperatur-Prozesskühler kühlt eine Flüssigkeit auf eine Austrittstemperatur von 7 °C.",
+      "exampleFa": "یک چیلر فرایندی دمابالا، مایع را تا دمای خروجی ۷ درجه سلسیوس سرد می‌کند.",
+      "category": "EU 2016/2281"
+    },
+    {
+      "id": "fan-coil-unit",
+      "term": "fan coil unit",
+      "de": "Ventilatorkonvektor (Gebläsekonvektor)",
+      "fa": "فن‌کویل",
+      "exampleEn": "A fan coil unit circulates indoor air but has no outdoor heat exchanger.",
+      "exampleDe": "Ein Ventilatorkonvektor wälzt die Raumluft um, hat aber keinen Außenwärmeübertrager.",
+      "exampleFa": "فن‌کویل هوای داخل را به گردش درمی‌آورد اما مبدل حرارتی بیرونی ندارد.",
+      "category": "EU 2016/2281"
+    },
+    {
+      "id": "heat-generator",
+      "term": "heat generator",
+      "de": "Wärmeerzeuger",
+      "fa": "مولد گرما",
+      "exampleEn": "The heat generator produces useful heat for the heating system.",
+      "exampleDe": "Der Wärmeerzeuger erzeugt nutzbare Wärme für das Heizsystem.",
+      "exampleFa": "مولد گرما، گرمای مفید را برای سیستم گرمایش تولید می‌کند.",
+      "category": "EU 2016/2281"
+    },
+    {
+      "id": "cold-generator",
+      "term": "cold generator",
+      "de": "Kälteerzeuger",
+      "fa": "مولد سرما",
+      "exampleEn": "The cold generator creates the temperature difference that extracts heat.",
+      "exampleDe": "Der Kälteerzeuger erzeugt die Temperaturdifferenz, die Wärme entzieht.",
+      "exampleFa": "مولد سرما، اختلاف دمایی را ایجاد می‌کند که گرما را خارج می‌سازد.",
+      "category": "EU 2016/2281"
+    },
+    {
+      "id": "comfort-chiller",
+      "term": "comfort chiller",
+      "de": "Komfortkühler",
+      "fa": "چیلر آسایشی",
+      "exampleEn": "A comfort chiller cools water for the thermal comfort of people in a building.",
+      "exampleDe": "Ein Komfortkühler kühlt Wasser für die thermische Behaglichkeit der Menschen im Gebäude.",
+      "exampleFa": "چیلر آسایشی، آب را برای آسایش حرارتی افراد در ساختمان سرد می‌کند.",
+      "category": "EU 2016/2281"
+    },
+    {
+      "id": "warm-air-heater",
+      "term": "warm air heater",
+      "de": "Warmlufterzeuger (Warmluftheizgerät)",
+      "fa": "گرمکن هوای گرم",
+      "exampleEn": "A warm air heater transfers heat from the heat generator directly to the air.",
+      "exampleDe": "Ein Warmlufterzeuger überträgt die Wärme vom Wärmeerzeuger direkt an die Luft.",
+      "exampleFa": "گرمکن هوای گرم، گرما را مستقیماً از مولد گرما به هوا منتقل می‌کند.",
+      "category": "EU 2016/2281"
+    },
+    {
+      "id": "seasonal-space-heating-efficiency",
+      "term": "seasonal space heating energy efficiency (ηs,h)",
+      "de": "jahreszeitbedingte Raumheizungs-Energieeffizienz (ηs,h)",
+      "fa": "بازده انرژی گرمایش فضایی فصلی",
+      "exampleEn": "The seasonal space heating energy efficiency is expressed as a percentage.",
+      "exampleDe": "Die jahreszeitbedingte Raumheizungs-Energieeffizienz wird in Prozent angegeben.",
+      "exampleFa": "بازده انرژی گرمایش فضایی فصلی بر حسب درصد بیان می‌شود.",
+      "category": "EU 2016/2281"
+    },
+    {
+      "id": "seasonal-space-cooling-efficiency",
+      "term": "seasonal space cooling energy efficiency (ηs,c)",
+      "de": "jahreszeitbedingte Raumkühlungs-Energieeffizienz (ηs,c)",
+      "fa": "بازده انرژی سرمایش فضایی فصلی",
+      "exampleEn": "For cooling products we declare the seasonal space cooling energy efficiency.",
+      "exampleDe": "Für Kühlprodukte geben wir die jahreszeitbedingte Raumkühlungs-Energieeffizienz an.",
+      "exampleFa": "برای محصولات سرمایش، بازده انرژی سرمایش فضایی فصلی را اعلام می‌کنیم.",
+      "category": "EU 2016/2281"
+    },
+    {
+      "id": "rated-refrigeration-capacity",
+      "term": "rated refrigeration capacity (P)",
+      "de": "Nennkälteleistung (P)",
+      "fa": "ظرفیت سرمایش نامی",
+      "exampleEn": "The rated refrigeration capacity is measured at full load and 35 °C inlet air.",
+      "exampleDe": "Die Nennkälteleistung wird bei Volllast und 35 °C Eintrittsluft gemessen.",
+      "exampleFa": "ظرفیت سرمایش نامی در بار کامل و هوای ورودی ۳۵ درجه اندازه‌گیری می‌شود.",
+      "category": "EU 2016/2281"
+    },
+    {
+      "id": "sepr",
+      "term": "seasonal energy performance ratio (SEPR)",
+      "de": "jahreszeitbedingtes Energieeffizienzverhältnis (SEPR)",
+      "fa": "نسبت کارایی انرژی فصلی (SEPR)",
+      "exampleEn": "The SEPR represents the chiller's efficiency over the whole year.",
+      "exampleDe": "Der SEPR bildet die Effizienz des Kühlers über das ganze Jahr ab.",
+      "exampleFa": "SEPR، کارایی چیلر را در طول کل سال نشان می‌دهد.",
+      "category": "EU 2016/2281"
+    },
+    {
+      "id": "vapour-compression-cycle",
+      "term": "vapour compression cycle",
+      "de": "Kaltdampf-Kompressionsprozess (Dampfkompressionszyklus)",
+      "fa": "چرخه تراکم بخار",
+      "exampleEn": "Most heat pumps move heat using a vapour compression cycle.",
+      "exampleDe": "Die meisten Wärmepumpen transportieren Wärme über einen Kaltdampf-Kompressionsprozess.",
+      "exampleFa": "بیشتر پمپ‌های حرارتی، گرما را با چرخه تراکم بخار جابه‌جا می‌کنند.",
+      "category": "Kältekreis"
+    },
+    {
+      "id": "sorption-cycle",
+      "term": "sorption cycle",
+      "de": "Sorptionszyklus",
+      "fa": "چرخه جذبی (سورپشن)",
+      "exampleEn": "A sorption cycle uses heat instead of a compressor to move heat.",
+      "exampleDe": "Ein Sorptionszyklus nutzt Wärme statt eines Verdichters, um Wärme zu transportieren.",
+      "exampleFa": "چرخه جذبی به جای کمپرسور از گرما برای انتقال گرما استفاده می‌کند.",
+      "category": "Kältekreis"
+    },
+    {
+      "id": "heat-sink",
+      "term": "heat sink",
+      "de": "Wärmesenke",
+      "fa": "چاه گرما (گیرنده گرما)",
+      "exampleEn": "The condenser releases heat to a heat sink such as ambient air.",
+      "exampleDe": "Der Verflüssiger gibt Wärme an eine Wärmesenke wie die Umgebungsluft ab.",
+      "exampleFa": "کندانسور گرما را به یک چاه گرما مانند هوای محیط آزاد می‌کند.",
+      "category": "Kältekreis"
+    },
+    {
+      "id": "heat-source",
+      "term": "heat source",
+      "de": "Wärmequelle",
+      "fa": "منبع گرما",
+      "exampleEn": "Ground, water or ambient air can serve as the heat source.",
+      "exampleDe": "Erdreich, Wasser oder Umgebungsluft können als Wärmequelle dienen.",
+      "exampleFa": "زمین، آب یا هوای محیط می‌تواند به‌عنوان منبع گرما عمل کند.",
+      "category": "Kältekreis"
+    },
+    {
+      "id": "gwp",
+      "term": "global warming potential (GWP)",
+      "de": "Treibhauspotenzial (GWP)",
+      "fa": "پتانسیل گرمایش جهانی (GWP)",
+      "exampleEn": "A refrigerant with a low global warming potential is preferred.",
+      "exampleDe": "Ein Kältemittel mit niedrigem Treibhauspotenzial wird bevorzugt.",
+      "exampleFa": "مبرّدی با پتانسیل گرمایش جهانی پایین ترجیح داده می‌شود.",
+      "category": "EU 2016/2281"
+    },
+    {
+      "id": "gcv",
+      "term": "gross calorific value (GCV)",
+      "de": "Brennwert (oberer Heizwert, GCV)",
+      "fa": "ارزش حرارتی ناخالص (GCV)",
+      "exampleEn": "Fuel efficiency is based on the gross calorific value of the fuel.",
+      "exampleDe": "Der Wirkungsgrad bezieht sich auf den Brennwert des Brennstoffs.",
+      "exampleFa": "بازده سوخت بر پایه ارزش حرارتی ناخالص سوخت محاسبه می‌شود.",
+      "category": "EU 2016/2281"
+    },
+    {
+      "id": "nox-emissions",
+      "term": "nitrogen oxides emissions (NOx)",
+      "de": "Stickoxidemissionen (NOx)",
+      "fa": "انتشار اکسیدهای نیتروژن (NOx)",
+      "exampleEn": "Gas-fired heaters must keep nitrogen oxides emissions below the limit.",
+      "exampleDe": "Gasbefeuerte Heizgeräte müssen die Stickoxidemissionen unter dem Grenzwert halten.",
+      "exampleFa": "گرمکن‌های گازسوز باید انتشار اکسیدهای نیتروژن را زیر حد مجاز نگه دارند.",
+      "category": "EU 2016/2281"
+    },
+    {
+      "id": "sound-power-level",
+      "term": "sound power level (LWA)",
+      "de": "Schallleistungspegel (LWA)",
+      "fa": "تراز توان صوتی (LWA)",
+      "exampleEn": "The sound power level is measured in decibels at standard rating conditions.",
+      "exampleDe": "Der Schallleistungspegel wird in Dezibel bei Standard-Nennbedingungen gemessen.",
+      "exampleFa": "تراز توان صوتی بر حسب دسی‌بل در شرایط نامی استاندارد اندازه‌گیری می‌شود.",
+      "category": "Messung"
+    },
+    {
+      "id": "supplementary-heater",
+      "term": "supplementary heater",
+      "de": "Zusatzwärmeerzeuger",
+      "fa": "گرمکن مکمل",
+      "exampleEn": "The supplementary heater adds heat when the load exceeds the heat pump's capacity.",
+      "exampleDe": "Der Zusatzwärmeerzeuger liefert Wärme, wenn die Last die Leistung der Wärmepumpe übersteigt.",
+      "exampleFa": "گرمکن مکمل زمانی گرما اضافه می‌کند که بار از ظرفیت پمپ حرارتی بیشتر شود.",
+      "category": "EU 2016/2281"
+    },
+    {
+      "id": "capacity-control",
+      "term": "capacity control",
+      "de": "Leistungsregelung",
+      "fa": "کنترل ظرفیت",
+      "exampleEn": "Capacity control can be fixed, staged or variable.",
+      "exampleDe": "Die Leistungsregelung kann fest, gestuft oder variabel sein.",
+      "exampleFa": "کنترل ظرفیت می‌تواند ثابت، پله‌ای یا متغیر باشد.",
+      "category": "EU 2016/2281"
+    },
+    {
+      "id": "operation-limit-temperature",
+      "term": "operation limit temperature (Tol)",
+      "de": "Betriebsgrenztemperatur (Tol)",
+      "fa": "دمای حد بهره‌برداری (Tol)",
+      "exampleEn": "Below the operation limit temperature the heat pump delivers no heating capacity.",
+      "exampleDe": "Unterhalb der Betriebsgrenztemperatur liefert die Wärmepumpe keine Heizleistung.",
+      "exampleFa": "زیر دمای حد بهره‌برداری، پمپ حرارتی هیچ ظرفیت گرمایشی ارائه نمی‌دهد.",
+      "category": "EU 2016/2281"
+    },
+    {
+      "id": "part-load-ratio",
+      "term": "part load ratio",
+      "de": "Teillastverhältnis",
+      "fa": "نسبت بار جزئی",
+      "exampleEn": "At the reference design temperature the part load ratio equals one.",
+      "exampleDe": "Bei der Referenzauslegungstemperatur ist das Teillastverhältnis gleich eins.",
+      "exampleFa": "در دمای طراحی مرجع، نسبت بار جزئی برابر یک است.",
+      "category": "EU 2016/2281"
+    },
+    {
+      "id": "design-heating-load",
+      "term": "design heating load",
+      "de": "Auslegungsheizlast",
+      "fa": "بار گرمایشی طراحی",
+      "exampleEn": "The design heating load is the heating demand at the reference design temperature.",
+      "exampleDe": "Die Auslegungsheizlast ist der Heizbedarf bei der Referenzauslegungstemperatur.",
+      "exampleFa": "بار گرمایشی طراحی، نیاز گرمایی در دمای طراحی مرجع است.",
+      "category": "EU 2016/2281"
+    },
+    {
+      "id": "active-mode",
+      "term": "active mode",
+      "de": "Ein-Betrieb (Aktivbetrieb)",
+      "fa": "حالت فعال",
+      "exampleEn": "In active mode the heating or cooling function of the unit is switched on.",
+      "exampleDe": "Im Ein-Betrieb ist die Heiz- oder Kühlfunktion des Geräts eingeschaltet.",
+      "exampleFa": "در حالت فعال، عملکرد گرمایش یا سرمایش دستگاه روشن است.",
+      "category": "EU 2016/2281"
+    },
+    {
+      "id": "off-mode",
+      "term": "off mode",
+      "de": "Aus-Zustand",
+      "fa": "حالت خاموش",
+      "exampleEn": "In off mode the unit is connected to the mains but provides no function.",
+      "exampleDe": "Im Aus-Zustand ist das Gerät am Netz, erfüllt aber keine Funktion.",
+      "exampleFa": "در حالت خاموش، دستگاه به برق متصل است اما هیچ عملکردی ندارد.",
+      "category": "EU 2016/2281"
+    },
+    {
+      "id": "indoor-side-heat-exchanger",
+      "term": "indoor side heat exchanger",
+      "de": "innenseitiger Wärmeübertrager",
+      "fa": "مبدل حرارتی سمت داخل",
+      "exampleEn": "In a heat pump the indoor side heat exchanger acts as the condenser.",
+      "exampleDe": "Bei einer Wärmepumpe wirkt der innenseitige Wärmeübertrager als Verflüssiger.",
+      "exampleFa": "در پمپ حرارتی، مبدل حرارتی سمت داخل به‌عنوان کندانسور عمل می‌کند.",
+      "category": "Komponenten"
+    },
+    {
+      "id": "outdoor-side-heat-exchanger",
+      "term": "outdoor side heat exchanger",
+      "de": "außenseitiger Wärmeübertrager",
+      "fa": "مبدل حرارتی سمت بیرون",
+      "exampleEn": "The outdoor side heat exchanger extracts heat from the ambient air.",
+      "exampleDe": "Der außenseitige Wärmeübertrager entzieht der Umgebungsluft Wärme.",
+      "exampleFa": "مبدل حرارتی سمت بیرون، گرما را از هوای محیط می‌گیرد.",
+      "category": "Komponenten"
+    },
+    {
+      "id": "conversion-coefficient",
+      "term": "conversion coefficient (CC)",
+      "de": "Umrechnungskoeffizient (CC)",
+      "fa": "ضریب تبدیل (CC)",
+      "exampleEn": "The conversion coefficient of 2.5 reflects the average EU electricity generation efficiency.",
+      "exampleDe": "Der Umrechnungskoeffizient von 2,5 spiegelt den mittleren EU-Stromerzeugungswirkungsgrad wider.",
+      "exampleFa": "ضریب تبدیل ۲٫۵ بازده متوسط تولید برق در اتحادیه اروپا را نشان می‌دهد.",
+      "category": "EU 2016/2281"
     }
   ]
 }

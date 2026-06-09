@@ -1,8 +1,17 @@
 # Heat Pump Lexikon — Fachvokabel-Trainer
 
-Ein Vokabeltrainer für die **Wärmepumpen-Prüftechnik** (EN 14511, EN 14825).
+Ein Vokabeltrainer für die **Wärmepumpen-Prüftechnik** (EN 14511, EN 14825,
+Ökodesign-Verordnung (EU) 2016/2281).
 Lernkarten Englisch → Deutsch/Persisch mit Beispielsätzen, Aussprache, Dark Mode
 und Spaced Repetition. Läuft komplett im Browser, ohne Server und ohne Konto.
+
+## Version
+
+Die App zeigt ihre Version auf der Übersichtsseite und im Kopf an, z. B.
+`App 1.1.0 · Vokabeldaten v2 · 69 Begriffe`. So lässt sich nach einem Update
+prüfen, ob im Browser wirklich die neueste Fassung läuft (ggf. die Seite mit
+Strg+F5 neu laden). Die App-Version steht in `app.js` (`APP_VERSION`), die
+Daten-Version im Feld `meta.version` von `vocabulary.json`.
 
 ## Funktionen
 

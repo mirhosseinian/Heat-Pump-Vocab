@@ -9,6 +9,9 @@
 (() => {
   "use strict";
 
+  // App-Version: wird bei jeder Programmänderung erhöht.
+  const APP_VERSION = "1.1.0";
+
   const LS = {
     progress: "hpv.progress.v1",
     custom: "hpv.custom.v1",
@@ -32,6 +35,7 @@
   /* ---------- Zustand ---------- */
   const state = {
     deck: [],            // alle Karten (Datei + eigene)
+    baseMeta: null,      // Metadaten aus vocabulary.json (u. a. version)
     progress: {},        // { id: sm2State }  — überlebt Kartenänderungen
     session: null,       // aktuelle Lernsitzung
     voices: [],
@@ -49,9 +53,11 @@
       const res = await fetch("vocabulary.json", { cache: "no-store" });
       if (!res.ok) throw new Error(res.status);
       const data = await res.json();
+      state.baseMeta = (data && data.meta) ? data.meta : null;
       return Array.isArray(data) ? data : (data.cards || []);
     } catch (err) {
       console.warn("vocabulary.json konnte nicht geladen werden:", err);
+      state.baseMeta = null;
       return [];
     }
   }
@@ -227,7 +233,30 @@
       meta.textContent = `${due} fällig`;
     }
 
+    renderVersion();
     renderCategories();
+  }
+
+  function renderVersion() {
+    const dataV = state.baseMeta && state.baseMeta.version ? state.baseMeta.version : "?";
+    const updated = state.baseMeta && state.baseMeta.updated ? state.baseMeta.updated : "";
+    let txt = `App ${APP_VERSION} · Vokabeldaten v${dataV} · ${state.deck.length} Begriffe`;
+    if (updated) txt += ` · Stand ${updated}`;
+
+    let el = document.getElementById("versionLine");
+    if (!el) {
+      el = document.createElement("p");
+      el.id = "versionLine";
+      el.className = "muted small";
+      el.style.marginTop = "10px";
+      el.style.fontFamily = "var(--font-mono)";
+      const head = document.querySelector(".view--dashboard .dash-head");
+      if (head) head.appendChild(el);
+    }
+    el.textContent = txt;
+
+    const sub = document.querySelector(".brand__sub");
+    if (sub) sub.textContent = `EN 14511 · EN 14825 · v${APP_VERSION}`;
   }
 
   function renderCategories() {
